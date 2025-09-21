@@ -18,7 +18,7 @@
     * { box-sizing: border-box; }
     html, body { height: 100%; margin: 0; }
     body {
-      background: url("SummerHeightsBand1.png") no-repeat center center fixed;
+      background: url("Untitled.png") no-repeat center center fixed;
       background-size: cover;
       opacity: 90%;
       color: #333;
@@ -282,7 +282,7 @@
     let currentPage="family";
     let carouselIndex=0;
 
-    const carouselImages=["Band1.png","dance.mp4","polaroidclouds.png","concert.mp4","warmup.mp4"];
+    const carouselImages=["teenagepunk.mp4","dance.mp4","polaroidclouds.png","concert.mp4","warmup.mp4"];
 const sections=[
   {img:"band1.png", text:"September 31 2025: Local band practice in the park. New singer Jan."},
   {img:"Bandsingmonkey.mp4", text:"August 10 2025: Mr Gee showed us some ACDC riffs."},
@@ -301,7 +301,7 @@ const sections=[
       navTop.innerHTML=""; navBottom.innerHTML=""; navBottom.style.display="flex";
 
       const leftBtn=(currentPage==="family")?"":`<button class="nav-btn" onclick="showPage('family')">Home</button>`;
-      const rightBtn=(currentPage==="club")?`<button class="nav-btn" onclick="showPage('school')">About</button>`:(currentPage==="school")?`<button class="nav-btn" onclick="showPage('club')">Club</button>`:"";
+      const rightBtn=(currentPage==="club")?`<button class="nav-btn" onclick="showPage('school')">CONVOS</button>`:(currentPage==="school")?`<button class="nav-btn" onclick="showPage('club')">Club</button>`:"";
       navTop.innerHTML=`${leftBtn||'<span></span>'}<div class="nav-title">Summer Heights Band</div>${rightBtn||'<span></span>'}`;
 
       let html="";
@@ -319,7 +319,7 @@ const sections=[
       }
 
       if(currentPage==="club"){
-        navBottom.innerHTML=`<button class="nav-btn" onclick="goBack()">⟵ Back</button><div></div><button class="nav-btn" onclick="showPage('school')">About</button>`;
+        navBottom.innerHTML=`<button class="nav-btn" onclick="goBack()">⟵ Back</button><div></div><button class="nav-btn" onclick="showPage('school')">CONVOS</button>`;
         html=`<div class="page-area with-bottom">
           <div class="carousel-container">
             <div class="carousel-frame">
@@ -455,7 +455,6 @@ const sections=[
   </script>
 </body>
 </html>
-
 
 
 
